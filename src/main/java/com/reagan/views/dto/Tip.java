@@ -40,4 +40,12 @@ public class Tip {
 	public static ResultObject<Object> passwordError() {
 		return tipMeg("密码错误修改失败", true);
 	}
+	
+	public static ResultObject<Object> uploadSuccess() {
+		return tipMeg("文件上传成功", true);
+	}
+	
+	public static ResultObject<Object> uploadError(String msg) {
+		return tipMeg("文件上传失败" + msg, true);
+	}
 }
