@@ -48,4 +48,9 @@ public class Tip {
 	public static ResultObject<Object> uploadError(String msg) {
 		return tipMeg("文件上传失败" + msg, true);
 	}
+	
+	public static ResultObject<Object> uniqueError(String msg) {
+		return tipMeg(msg + "重复", true);
+	}
+
 }
